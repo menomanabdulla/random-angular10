@@ -7,3 +7,12 @@
 <input type="text" #box />
 <button (click) = "getMyValue(box.value)">Get my Value</button>
 <h2>My typed value: {{currentVal}}</h2>
+<br/>
+<br/>
+<input type="text" #box2 [disabled]= "disableedBox" [value]="propertName" />
+<br/>
+<br/>
+<input type="text" #box3  [disabled]="disableedBox"  value={{propertName}} />
+<br/>
+<br/>
+<button (click) = "enableBox()">Enable boxes</button>

@@ -18,4 +18,10 @@ export class AppComponent {
     console.log(val)
     this.currentVal = val;
   }
+  //property binding
+  propertName= "bruce"
+  disableedBox = true
+  enableBox(){
+    this.disableedBox = false
+  }
 }
