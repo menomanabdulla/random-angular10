@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice';
+  //calling a function
   Default = 'Bruce';
   getName(name){
     alert(name)
+  }
+  //get input-text value
+  currentVal = "";
+  getMyValue(val){
+    console.log(val)
+    this.currentVal = val;
   }
 }

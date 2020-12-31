@@ -2,3 +2,8 @@
 <app-user-list></app-user-list>
 <button (click)="getName('noman')">Get Your Name</button>
 <button (click)="getName(Default)">Get Your Name</button>
+<br/>
+<br/>
+<input type="text" #box />
+<button (click) = "getMyValue(box.value)">Get my Value</button>
+<h2>My typed value: {{currentVal}}</h2>
