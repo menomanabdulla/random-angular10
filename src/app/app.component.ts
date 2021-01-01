@@ -65,5 +65,33 @@ export class AppComponent {
       3. Make a array with object
       4. Apply for loop with it table
   */
+
+  data=[
+    'piter',
+    'sam',
+    'noman'
+  ]
+  data2=[
+    {
+      name: 'noman',
+      age: '25',
+      mail: 'doian@mail.com'
+    },
+    {
+      name: 'abdulla',
+      age: '21',
+      mail: 'doian@mail.com'
+    },
+    {
+      name: 'sam',
+      age: '18',
+      mail: 'doian@mail.com'
+    },
+    {
+      name: 'tonny',
+      age: '19',
+      mail: 'doian@mail.com'
+    },
+  ]
 }
 

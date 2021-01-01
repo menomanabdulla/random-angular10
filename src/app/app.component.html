@@ -68,4 +68,25 @@
         </h3>
     </div>
 
-<h2>Switch Case: </h2>
+<h2>NG For-Loop: </h2>
+    <div>
+        <h3 *ngFor="let item of data">
+            {{item.name}}
+            {{item.age}}
+
+        </h3>
+
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Email</td>
+            </tr>
+            <tr *ngFor="let item of data2">
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.mail}}</td>
+            </tr>
+        </table>
+
+    </div>
