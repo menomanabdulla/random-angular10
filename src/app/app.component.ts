@@ -101,8 +101,19 @@ export class AppComponent {
       3. Make a form
       4. Make a function and get from value
   */
- getFormValues(value){
-   console.warn(value);
- }
+  getFormValues(value){
+    console.warn(value);
+  }
+
+  //Make A Header and Footer
+  /*
+      1. Create Header Component
+      2. Create Footer Componet
+      3. Use Both component
+      4. Add Style
+  */
+
+  
+
 }
 
