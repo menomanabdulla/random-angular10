@@ -6,13 +6,49 @@
 <br/>
 <input type="text" #box />
 <button (click) = "getMyValue(box.value)">Get my Value</button>
-<h2>My typed value: {{currentVal}}</h2>
+<h3>My typed value: {{currentVal}}</h3>
 <br/>
 <br/>
-<input type="text" #box2 [disabled]= "disableedBox" [value]="propertName" />
-<br/>
-<br/>
-<input type="text" #box3  [disabled]="disableedBox"  value={{propertName}} />
-<br/>
-<br/>
-<button (click) = "enableBox()">Enable boxes</button>
+<h2>Events: </h2>
+    <div>
+        <input type="text" #box2 [disabled]= "disableedBox" [value]="propertName" />
+        <br/>
+        <br/>
+        <input type="text" #box3  disabled={{disableedBox}}  value={{propertName}} />
+        <br/>
+        <br/>
+        <button (click) = "enableBox()">Enable boxes</button>
+        <br />
+        <br />
+    </div>
+<h2>Conditional statements: </h2>
+    <div>
+        <button (click) = "toogleBLock()">Toggle Block01</button>
+        <h3 *ngIf="show else elseBlock01">
+            This is if block
+        </h3>
+        <ng-template #elseBlock01>
+            <h3>This is else block</h3>
+        </ng-template>
+
+        <br/>
+        <button (click) = "toogleBLock2()">Toggle Block02</button>
+        <h3 *ngIf="showText=='yes'; then ifBlock2 else elseBlock02"></h3>
+        <ng-template #ifBlock2>
+            <h3>This is if block2</h3>
+        </ng-template>
+        <ng-template #elseBlock02>
+            <h3>This is else block2</h3>
+        </ng-template>
+
+        <br/>
+        <ng-template [ngIf]="color=='red'">
+            <h3>This is Red Block</h3>
+        </ng-template>
+        <ng-template [ngIf]="color=='green'">
+            <h3>This is Green Block</h3>
+        </ng-template>
+        <ng-template [ngIf]="color=='blue'">
+            <h3>This is Blue Block</h3>
+        </ng-template>
+    </div>
