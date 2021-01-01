@@ -58,7 +58,7 @@ export class AppComponent {
   myColor = 'red'
 
 
-    //Ng For Loop
+  //Ng For Loop
   /*
       1. Make a Array
       2. Apply for-loop with it
@@ -93,5 +93,16 @@ export class AppComponent {
       mail: 'doian@mail.com'
     },
   ]
+
+  //Working with a Simple Form
+  /*
+      1. Make a Simple from in angular
+      2. Import form module in module file
+      3. Make a form
+      4. Make a function and get from value
+  */
+ getFormValues(value){
+   console.warn(value);
+ }
 }
 
