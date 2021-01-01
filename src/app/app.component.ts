@@ -46,8 +46,24 @@ export class AppComponent {
   toogleBLock2(){
     this.showText = this.showText == 'yes' ? 'no' : 'yes';
   }
-
   //5. Make Conditon with property Binding
   color = 'blue'
+
+  //Ng Switch Case statement
+  /*
+      1. Make a property color
+      2. Show data acording to color name
+      3. Switch case
+  */
+  myColor = 'red'
+
+
+    //Ng For Loop
+  /*
+      1. Make a Array
+      2. Apply for-loop with it
+      3. Make a array with object
+      4. Apply for loop with it table
+  */
 }
 
