@@ -167,6 +167,14 @@ export class AppComponent {
     2. Try with some bootstrap examples
     3. we check and use code form official website of ng-bootstrap
   */
+  //Add Material UI
+    /*
+      What is Material UI
+      Install Material UI - ng add @angular/material
+      select some when while installing Material
+      Use some component with example 
+      Such as Slider and Button
+    */
   
 }
 

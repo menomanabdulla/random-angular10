@@ -114,4 +114,13 @@
     <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
 </p>
 
+    <button mat-raised-button color="primary">Angular Material Button</button>
+    <mat-slider
+        thumbLabel
+        [displayWith]="formatLabel"
+        tickInterval="1000"
+        min="1"
+        max="100000">
+    </mat-slider>
+
 <app-footer></app-footer>
