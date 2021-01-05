@@ -124,8 +124,9 @@
     </mat-slider>
 
 
-    <app-user [hero]="myData">
-
-    </app-user>
+    <div *ngFor="let userdata of usersData">
+        <app-user [hero]="userdata"> </app-user>
+    </div>
+    
 
 <app-footer></app-footer>

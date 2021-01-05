@@ -182,12 +182,31 @@ export class AppComponent {
     Make it child of app component 
     Pass data to app to child component
     Display data in child component
+
+      //Reusable component in angular
+      Make a user component
+      Use it inside app cponent as a child
+      Pass data from parent to child
+      Use for loop and result child component
   */
   myTitle= 'blog';
-  myData= {
-    name: 'bruce',
-    age: 40,
-    email: 'domain@mail.com'
-  };
+  usersData= [
+    {
+      name: 'bruce',
+      age: 40,
+      email: 'domain@mail.com'
+    },
+    {
+      name: 'Abdulla',
+      age: 25,
+      email: 'domain@mail.com'
+    },
+    {
+      name: 'Noman',
+      age: 26,
+      email: 'domain@mail.com'
+    }
+  ];
+
 }
 
