@@ -1,12 +1,12 @@
 <app-header></app-header>
 <app-user-list></app-user-list>
-<button (click)="getName('noman')">Get Your Name</button>
-<button (click)="getName(Default)">Get Your Name</button>
-<br/>
-<br/>
-<input type="text" #box />
-<button (click) = "getMyValue(box.value)">Get my Value</button>
-<h3>My typed value: {{currentVal}}</h3>
+    <button (click)="getName('noman')">Get Your Name</button>
+    <button (click)="getName(Default)">Get Your Name</button>
+    <br/>
+    <br/>
+    <input type="text" #box />
+    <button (click) = "getMyValue(box.value)">Get my Value</button>
+    <h3>My typed value: {{currentVal}}</h3>
 <br/>
 <br/>
 <h2>Events: </h2>
@@ -107,5 +107,11 @@
 
 <h2>Simple Hader And Footer Layout: </h2>
 
+<p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+</p>
 
 <app-footer></app-footer>
