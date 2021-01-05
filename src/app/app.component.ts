@@ -175,6 +175,19 @@ export class AppComponent {
       Use some component with example 
       Such as Slider and Button
     */
-  
+
+  //Pass data parent to child
+  /*
+    Make users component
+    Make it child of app component 
+    Pass data to app to child component
+    Display data in child component
+  */
+  myTitle= 'blog';
+  myData= {
+    name: 'bruce',
+    age: 40,
+    email: 'domain@mail.com'
+  };
 }
 

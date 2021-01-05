@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from "@angular/material/slider";
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MatSliderModule } from "@angular/material/slider";
     AppComponent,
     UserListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
